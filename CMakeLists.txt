@@ -15,7 +15,7 @@ add_library(picobench
 
 macro(add_exe name src)
     add_executable(${name} ${src})
-    target_link_libraries(${name} picobench)
+    target_link_libraries(${name} picobench pthread)
 endmacro()
 
 # benchmarks

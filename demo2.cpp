@@ -25,6 +25,7 @@
 
 #include <vector>
 #include <list>
+#include <cstdlib>
 
 template <typename C>
 void push_back(C& c, int i)

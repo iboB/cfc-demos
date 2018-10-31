@@ -22,12 +22,12 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 #include "picobench/picobench.hpp"
-
+#include <cstdlib>
 #include <vector>
 
 #ifdef _MSC_VER
 
-#include <intrin.h>  
+#include <intrin.h>
 
 #pragma intrinsic(_BitScanForward)
 
