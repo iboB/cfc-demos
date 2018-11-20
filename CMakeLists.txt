@@ -13,9 +13,13 @@ add_library(picobench
     picobench/picobench.cpp
 )
 
+if(NOT MSVC)
+    target_link_libraries(picobench INTERFACE pthread)
+endif()	
+
 macro(add_exe name src)
-    add_executable(${name} ${src})
-    target_link_libraries(${name} picobench pthread)
+    add_executable(${name} ${src})	
+    target_link_libraries(${name} picobench)
 endmacro()
 
 # benchmarks
